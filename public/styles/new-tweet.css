@@ -1,0 +1,105 @@
+.container {
+  padding: 2em;
+}
+.new-tweet{
+  border: 2px solid red;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 12px;
+  background-color: #D8D8D8;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+.new-tweet form{
+  padding-bottom: 30px;
+}
+.new-tweet h2{
+  border-bottom: 1px solid black;
+}
+
+.new-tweet span{
+  float: right;
+}
+.new-tweet textarea{
+  width: 100%;
+}
+/* added new class */
+.new-tweet .invalid {
+  color: red
+}
+
+
+.new-tweet input{
+  float: left;
+}
+
+
+.tweet-container header{
+  background-color: #D8D8D8;
+  border-bottom: 2px solid #D1CCCA;
+}
+
+.tweet-container img {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+
+
+#tweet-container div{
+  height: 8em;
+  text-align: left;
+  border: none;
+}
+#tweet-container footer h6{
+  text-align: left;
+  padding-left: 5px;
+}
+#tweet-container h3{
+  margin: 0;
+  float: left;
+  line-height: 40px;
+}
+#tweet-container h6{
+  text-align: right;
+  margin: 0;
+  line-height: 50px;
+}
+.tweet-container header{
+  height: 4em;
+}
+
+.tweet-container footer{
+  border-top: 2px solid rgb(112, 62, 42);
+}
+
+.tweet:hover{
+  opacity: 0.9;
+  border-radius: 12px;
+}
+
+.tweet{
+  opacity: 0.6;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin-bottom: 3em;
+}
+
+
+/* .tweet-container{
+  border: 2px solid #D1CCCA;
+  border-radius: 12px;
+}
+
+.tweet-container:hover{
+  border: 2px solid black;
+  border-radius: 12px;
+} */
+
+
+
+
+
+
+
