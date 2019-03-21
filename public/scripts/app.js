@@ -82,7 +82,7 @@ function createTweetElement (data) {
     <h6>${handle}</h6>
   </header>
   <div class = "tweet body">
-    <p>${content}</p>
+    <p>${escape(content)}</p>
   </div>
   <footer>
     <h6>${timestamp}</h6>
@@ -94,6 +94,7 @@ function createTweetElement (data) {
 }
 
 function renderTweets (array) {
+  $('.tweet-container').empty();
   for (tweet of array){
     var $tweet = createTweetElement(tweet);
     $('.tweet-container').prepend($tweet); 
@@ -106,6 +107,14 @@ function loadTweets() {
     renderTweets(tweets);
   })
 }
+
+
+function escape(str) {
+  var div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
 
 
 // $(function postTweet() {
@@ -124,9 +133,10 @@ $(document).ready(function() {
   $(".new-tweet form").submit(function(e) {
     e.preventDefault();
      if($('textarea').val().length > 140 ) {
-      alert('message is too long')
+        $( "#error-message" ).show( "slow", function() {
+         });
      } else if ($('textarea').val().length === 0 ) {
-      alert('message is empty')
+      alert('message cannot be empty')
      }
      else 
     $.ajax({
@@ -135,10 +145,10 @@ $(document).ready(function() {
       data: $(this).serialize()
     })
       .then(function(){
+        $( "#error-message" ).hide( "slow", function() {
+        });
         loadTweets()
         $('textarea').val('')
-        // console.log('|' + tweets + '|')
-        // renderTweets(tweets);
       });
   })
 });

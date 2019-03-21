@@ -9,6 +9,13 @@
   background-color: #D8D8D8;
   padding: 2em;
   margin-bottom: 2em;
+  display: none;
+}
+#error-message {
+  color: red; 
+  margin-top: 0;
+  display: none
+
 }
 .new-tweet form{
   padding-bottom: 30px;
