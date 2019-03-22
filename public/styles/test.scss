@@ -1,6 +1,5 @@
 .container {
   padding: 2em;
-  width: 45%;
 }
 .new-tweet{
   border: 2px solid red;
@@ -11,20 +10,21 @@
   padding: 2em;
   margin-bottom: 2em;
   display: none;
-  
+  form {
+    padding-bottom: 30px;
+  }
+  h2{
+    border-bottom: 1px solid black;
+  }
 }
+
 #error-message {
   color: red; 
   margin-top: 0;
   display: none
 
-}
-.new-tweet form{
-  padding-bottom: 30px;
-}
-.new-tweet h2{
-  border-bottom: 1px solid black;
-}
+} 
+.new-tweet 
 
 .new-tweet span{
   float: right;

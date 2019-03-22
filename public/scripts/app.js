@@ -73,7 +73,7 @@ function createTweetElement (data) {
   let avatars = data.user.avatars.small;
   let handle = data.user.handle;
   let content = data.content.text
-  let timestamp = data.created_at
+  let timestamp = Date(data.created_at)
 
   var html = `
   <header>
@@ -85,7 +85,10 @@ function createTweetElement (data) {
     <p>${escape(content)}</p>
   </div>
   <footer>
-    <h6>${timestamp}</h6>
+    <span>${timestamp}</span>
+    <img src = "images/iconfinder_117_111081.png">
+    <img src = "images/retweet.png">
+    <img src = "images/iconfinder_heart_299063.png">
   </footer>
     `
 
@@ -129,16 +132,17 @@ function escape(str) {
 // });
 
 $(document).ready(function() {
-
+  loadTweets()
   $(".new-tweet form").submit(function(e) {
     e.preventDefault();
      if($('textarea').val().length > 140 ) {
         $( "#error-message" ).show( "slow", function() {
          });
      } else if ($('textarea').val().length === 0 ) {
-      alert('message cannot be empty')
+      $( "#error-message2" ).show( "slow", function() {
+      });
      }
-     else 
+     else {
     $.ajax({
       url: $(this).attr("action"), 
       method: 'POST', 
@@ -147,8 +151,12 @@ $(document).ready(function() {
       .then(function(){
         $( "#error-message" ).hide( "slow", function() {
         });
+        $( "#error-message2" ).hide( "slow", function() {
+        });
         loadTweets()
         $('textarea').val('')
+        $('.counter').text('140')
       });
+    }
   })
 });

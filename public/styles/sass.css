@@ -1,8 +1,8 @@
 .container {
   padding: 2em;
-  width: 45%;
 }
-.new-tweet{
+
+.new-tweet {
   border: 2px solid red;
   padding-left: 2em;
   padding-right: 2em;
@@ -11,39 +11,38 @@
   padding: 2em;
   margin-bottom: 2em;
   display: none;
-  
 }
-#error-message {
-  color: red; 
-  margin-top: 0;
-  display: none
-
-}
-.new-tweet form{
+.new-tweet form {
   padding-bottom: 30px;
 }
-.new-tweet h2{
+.new-tweet h2 {
   border-bottom: 1px solid black;
 }
 
-.new-tweet span{
+#error-message {
+  color: red;
+  margin-top: 0;
+  display: none;
+}
+
+.new-tweet .new-tweet span {
   float: right;
 }
-.new-tweet textarea{
+
+.new-tweet textarea {
   width: 100%;
 }
+
 /* added new class */
 .new-tweet .invalid {
-  color: red
+  color: red;
 }
 
-
-.new-tweet input{
+.new-tweet input {
   float: left;
 }
 
-
-.tweet-container header{
+.tweet-container header {
   background-color: #D8D8D8;
   border-bottom: 2px solid #D1CCCA;
 }
@@ -60,48 +59,48 @@
   float: right;
 }
 
-
-
-
-#tweet-container div{
+#tweet-container div {
   height: 8em;
   text-align: left;
   border: none;
 }
-#tweet-container footer span{
+
+#tweet-container footer span {
   text-align: left;
   padding-left: 5px;
 }
-#tweet-container h3{
+
+#tweet-container h3 {
   margin: 0;
   float: left;
   line-height: 40px;
 }
-#tweet-container h6{
+
+#tweet-container h6 {
   text-align: right;
   margin: 0;
   line-height: 50px;
 }
-.tweet-container header{
+
+.tweet-container header {
   height: 4em;
 }
 
-.tweet-container footer{
-  border-top: 2px solid rgb(112, 62, 42);
+.tweet-container footer {
+  border-top: 2px solid #703e2a;
 }
 
-.tweet:hover{
+.tweet:hover {
   opacity: 0.9;
   border-radius: 12px;
 }
 
-.tweet{
+.tweet {
   opacity: 0.6;
   border: 2px solid black;
   border-radius: 12px;
   margin-bottom: 3em;
 }
-
 
 /* .tweet-container{
   border: 2px solid #D1CCCA;
@@ -113,9 +112,4 @@
   border-radius: 12px;
 } */
 
-
-
-
-
-
-
+/*# sourceMappingURL=sass.css.map */

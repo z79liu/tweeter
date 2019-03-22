@@ -46,6 +46,7 @@
             <form action="/tweets/" method="POST">
               <textarea name="text" placeholder="What are you humming about?"></textarea>
               <p id = 'error-message'>Tweets cannot exceed 140 characters</p>
+              <p id = 'error-message2' style = "display: none; color: red;">Tweets cannot be empty</p>
               <input type="submit" value="Tweet" id= 'submitbtn'>
               <span class="counter">140</span>
             </form>
@@ -63,6 +64,7 @@
               </div>
               <footer>
                 <h6>10 days ago</h6>
+  
               </footer>
             </article>
           </section>
