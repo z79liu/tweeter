@@ -15,3 +15,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+##Screenshots
+
+![Alt text](/Pictures/Screenshot1.png?raw=true "HomePage")
+![Alt text](/Pictures/Screenshot2.png?raw=true "HomePage")
+
